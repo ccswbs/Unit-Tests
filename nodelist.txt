@@ -1,0 +1,3 @@
+http://www.uoguelph.ca/ccs http://aoda.web.uoguelph.ca/ccs
+http://www.uoguelph.ca/ccs/news http://aoda.web.uoguelph.ca/ccs/news
+http://www.uoguelph.ca/ccs/events http://aoda.web.uoguelph.ca/ccs/events

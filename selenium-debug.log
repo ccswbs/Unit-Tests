@@ -1,0 +1,44 @@
+12:10:26.755 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to bin/chromedriver.exe
+12:10:26.826 INFO - Java: Oracle Corporation 24.85-b03
+12:10:26.826 INFO - OS: Linux 4.2.0-17-generic amd64
+12:10:26.855 INFO - v2.48.0, with Core v2.48.0. Built from revision 41bccdd
+12:10:26.995 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match the current platform LINUX
+12:10:27.000 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, browserName=MicrosoftEdge, version=}] does not match the current platform LINUX
+12:10:27.000 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+12:10:27.000 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+12:10:27.089 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+12:10:27.089 INFO - Selenium Server is up and running
+12:10:27.460 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Breadcrumb}]])
+12:10:27.470 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Breadcrumb}]
+12:10:30.577 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Breadcrumb}]]
+12:10:30.609 INFO - Executing: [get: http://www.uoguelph.ca/ccs/news])
+12:10:30.883 INFO - Done: [get: http://www.uoguelph.ca/ccs/news]
+12:10:30.906 INFO - Executing: [get current url])
+12:10:32.441 INFO - Done: [get current url]
+12:10:32.448 INFO - Executing: [find elements: By.xpath: //body])
+12:10:32.597 INFO - Done: [find elements: By.xpath: //body]
+12:10:32.603 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (7c296617-de18-48ac-8970-de410a3d85df)] -> xpath: //body]])
+12:10:32.612 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (7c296617-de18-48ac-8970-de410a3d85df)] -> xpath: //body]]
+12:10:32.622 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
+      }.apply(window, passedArgs);, []])
+12:10:32.652 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
+      }.apply(window, passedArgs);, []]
+12:10:32.658 INFO - Executing: [find element: By.cssSelector: ol[class='breadcrumb'] li:nth-child(1)])
+12:10:32.673 INFO - Done: [find element: By.cssSelector: ol[class='breadcrumb'] li:nth-child(1)]
+12:10:32.679 INFO - Executing: [get text: 1 [[FirefoxDriver: firefox on LINUX (7c296617-de18-48ac-8970-de410a3d85df)] -> css selector: ol[class='breadcrumb'] li:nth-child(1)]])
+12:10:32.745 INFO - Done: [get text: 1 [[FirefoxDriver: firefox on LINUX (7c296617-de18-48ac-8970-de410a3d85df)] -> css selector: ol[class='breadcrumb'] li:nth-child(1)]]
+12:10:32.750 INFO - Executing: [get: http://aoda.web.uoguelph.ca/ccs/news])
+12:10:34.559 INFO - Done: [get: http://aoda.web.uoguelph.ca/ccs/news]
+12:10:34.568 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
+      }.apply(window, passedArgs);, []])
+12:10:34.596 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
+        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
+      }.apply(window, passedArgs);, []]
+12:10:34.606 INFO - Executing: [delete session: 87d43c17-b8b0-4fba-b469-c1e205101bed])
+12:10:34.721 INFO - Done: [delete session: 87d43c17-b8b0-4fba-b469-c1e205101bed]

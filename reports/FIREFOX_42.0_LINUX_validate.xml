@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="validate"
+    errors="0" failures="0" hostname="" id="" package="validate" skipped="0"
+    tests="4" time="0.000" timestamp="Wed, 11 Nov 2015 14:27:39 GMT">
+  
+    <testcase name="Validator Test" time="4.050" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Input URL" time="2.333" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Error Check" time="0.02200" assertions="0">
+    </testcase>
+  
+    <testcase name="Error Log" time="0.1070" assertions="0">
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
