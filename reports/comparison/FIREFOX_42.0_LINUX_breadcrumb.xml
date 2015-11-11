@@ -5,24 +5,24 @@
 
   <testsuite name="breadcrumb"
     errors="0" failures="1" hostname="" id="" package="comparison" skipped="1"
-    tests="5" time="0.000" timestamp="Wed, 11 Nov 2015 17:10:34 GMT">
+    tests="5" time="0.000" timestamp="Wed, 11 Nov 2015 21:03:47 GMT">
   
-    <testcase name="Breadcrumb Test" time="5.389" assertions="2">
+    <testcase name="Breadcrumb Test" time="6.724" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Level Count" time="0.03600" assertions="0">
+    <testcase name="Level Count" time="0.04200" assertions="0">
     </testcase>
   
-    <testcase name="Get Breadcrumb Strings" time="0.09200" assertions="0">
+    <testcase name="Get Breadcrumb Strings" time="0.06100" assertions="0">
     </testcase>
   
-    <testcase name="Level Compare" time="1.976" assertions="1">  <failure message="Failed [equal]: (Checking that breadcrumb trails have the same number of levels.)">Failed [equal]: (Checking that breadcrumb trails have the same number of levels.): Failed [equal]: (Checking that breadcrumb trails have the same number of levels.) - Expected &quot;1&quot; but got: &quot;2&quot;
+    <testcase name="Level Compare" time="2.025" assertions="1">  <failure message="Failed [equal]: (Checking that breadcrumb trails have the same number of levels.)">Failed [equal]: (Checking that breadcrumb trails have the same number of levels.): Failed [equal]: (Checking that breadcrumb trails have the same number of levels.) - Expected &quot;1&quot; but got: &quot;2&quot;
     at Object.equal (/home/autobox/node_modules/nightwatch/lib/core/api.js:67:24)
-    at Object.&lt;anonymous&gt; (/home/autobox/Desktop/Unit Tests/tests/comparison/breadcrumb.js:49:24)
+    at Object.&lt;anonymous&gt; (/home/autobox/Desktop/Unit-Tests/tests/comparison/breadcrumb.js:49:24)
     at HttpRequest.&lt;anonymous&gt; (/home/autobox/node_modules/nightwatch/lib/index.js:322:20)
     at emitTwo (events.js:87:13)
     at HttpRequest.emit (events.js:172:7)
