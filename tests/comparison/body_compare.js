@@ -1,7 +1,7 @@
 //body_compare.js created by Joshua Pinsent
 //This script compares the body content of two specified webpages. It first compares
 //the text without any HTML tags, followed by the text with HTML tags.
-//Args: The urls to be compared (argv[2], arg[3]).
+//Args: The urls to be compared (argv[4], arg[5]).
 //Failures: Content across each page does not match, HTML tags do not match.
 var bodStr;
 var bodHTML;
@@ -9,7 +9,7 @@ var bodHTML;
 module.exports = {
   'Body Content Compare' : function(browser) {
     browser
-      .url(process.argv[2])
+      .url(process.argv[4])
       .useXpath()
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")
@@ -38,7 +38,7 @@ module.exports = {
 
     'Open New Page' : function(browser) {
     browser
-      .url(process.argv[3])
+      .url(process.argv[5])
       .pause(1000)
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")

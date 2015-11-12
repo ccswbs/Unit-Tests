@@ -1,6 +1,6 @@
 //font_styles.js created by Joshua Pinsent
 //This script checks that the body content does not contain unneccessary styling attributes
-//Args: The url to be tested (argv[2])
+//Args: The url to be tested (argv[4])
 //Failures: Style attribute contains 'color' or 'font' styling,
 //          Link is not a uoguelph website, Body content does not load.
 

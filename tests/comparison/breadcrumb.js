@@ -1,6 +1,6 @@
 //breadcrumb.js created by Joshua Pinsent
 //This script compares breadcrumbs between two websites.
-//Args: The urls to be compared (argv[2], arg[3]).
+//Args: The urls to be compared (argv[4], arg[5]).
 //Failures: The levels do not match on each page, The strings do not match on each page,
 //          Link is not a uoguelph website, Body content does not load.
 
