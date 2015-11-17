@@ -1,7 +1,7 @@
 //body_compare.js created by Joshua Pinsent
 //This script compares the body content of two specified webpages. It first compares
 //the text without any HTML tags, followed by the text with HTML tags.
-//Args: The urls to be compared (argv[4], arg[5]).
+//Args: The urls to be compared (argv[2], arg[3]).
 //Failures: Content across each page does not match, HTML tags do not match.
 var bodStr;
 var bodHTML;
@@ -9,7 +9,7 @@ var bodHTML;
 module.exports = {
   'Body Content Compare' : function(browser) {
     browser
-      .url(process.argv[4])
+      .url(process.argv[2])
       .useXpath()
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")
@@ -38,7 +38,7 @@ module.exports = {
 
     'Open New Page' : function(browser) {
     browser
-      .url(process.argv[5])
+      .url(process.argv[3])
       .pause(1000)
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")
@@ -53,6 +53,9 @@ module.exports = {
         if(result.value != bodStr) {
           browser.assert.fail(bodStr, result.value, "The pages' content do not match.")
         }
+        else {
+          browser.assert.equal(bodStr, result.value, "The pages' content are the same.")
+        }
       })
     },
 
@@ -66,6 +69,9 @@ module.exports = {
 
         if(result.value != bodHTML) {
           browser.assert.fail(bodHTML, result.value, "The pages' HTML tags do not match.")
+        }
+        else {
+          browser.assert.equal(bodHTML, result.value, "The pages' HTML tags are the same.")
         }
       })
 
