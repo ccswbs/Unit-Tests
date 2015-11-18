@@ -1,4 +1,3 @@
-node_count	type
 14	banner
 11	book
 66	event

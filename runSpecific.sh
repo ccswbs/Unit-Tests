@@ -18,7 +18,8 @@ if [ ! -f $3 ]; then
 fi
 
 # reads each line of the specified file and uses it as arguments for calling the nightwatch tests
+
 while read line
 do 
 	node nightwatch --test tests/$1/$2 $line
-done < $3.txt
+done < $3 
