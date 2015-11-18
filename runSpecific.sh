@@ -21,4 +21,4 @@ fi
 while read line
 do 
 	node nightwatch --test tests/$1/$2 $line
-done < nodelist.txt
+done < $3.txt
