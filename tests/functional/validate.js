@@ -1,6 +1,6 @@
 //validate.js created by Joshua Pinsent
 //This script plugs a link into the W3C Markup Validation Service and returns whether it passed or failed.
-//Args: The url to be tested (argv[2]).
+//Args: The url to be tested (argv[4]).
 //Failures: An error is generated via the W3C validator.
 var errors = 0;
 
@@ -14,7 +14,7 @@ module.exports = {
 
   'Input URL' : function(browser) {
     browser
-      .setValue("//input[@type='text']", process.argv[2])
+      .setValue("//input[@type='text']", process.argv[4])
       .waitForElementVisible("//a[@class='submit']", 1000)
       .click("//a[@class='submit']")
       .pause(1000)

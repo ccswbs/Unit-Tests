@@ -1,16 +1,15 @@
 //pagination.js created by Joshua Pinsent
 //This script tests pagination. It starts from the first page and then clicks next, previous, first and last. 
-//Args: The url to be tested (argv[2])
+//Args: The url to be tested (argv[4])
 //Failures: Pagination not found, Next/Last button present on Last page, Prev/First button present on First page,
 //          incorrect page numbers (on pages 1, 2 and the last page), class 'disabled last' not found on last page,
 //          class 'disabled first' not found on first page.
 var max_page = "";
 
 module.exports = {
-
   'Pagination' : function (browser) {
     browser
-      .url(browser.launch_url)
+      .url(process.argv[4])
       .useXpath()
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")
@@ -18,8 +17,16 @@ module.exports = {
 
     //End test if pagination is not present
     'Pagination Present' : function (browser) {
-    browser
-      .waitForElementPresent("//ul[@class='pagination']", 1000, "No pagination found on page.")
+      browser
+      .execute(function() {
+        return document.querySelectorAll("ul[class='pagination']").length;
+      }, 
+      function(count){
+        if (count.value == 0) {
+          browser.assert.equal(count.value, 0, "There is no pagination on this page.");
+          browser.end();
+        }
+      })
     },
 
     //Get max page number

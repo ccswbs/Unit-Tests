@@ -1,6 +1,6 @@
 //listing.js created by Joshua Pinsent
 //This script tests the number of articles on a listing page and ensures that there are ten or less.
-//Args: The urls to be compared (argv[2], arg[3]).
+//Args: The url to be tested (argv[4])
 //Failures: More than 10 items on page, Next button is present & less than 10 items on page,
 //          Link is not a uoguelph website, Body content does not load.
 var count = 0;
@@ -8,7 +8,7 @@ var count = 0;
 module.exports = {
   'Listing Item Count' : function(browser) {
     browser
-      .url(process.argv[2])
+      .url(process.argv[4])
       .useXpath()
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")

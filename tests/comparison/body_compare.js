@@ -53,6 +53,9 @@ module.exports = {
         if(result.value != bodStr) {
           browser.assert.fail(bodStr, result.value, "The pages' content do not match.")
         }
+        else {
+          browser.assert.equal(bodStr, result.value, "The pages' content are the same.")
+        }
       })
     },
 
@@ -66,6 +69,9 @@ module.exports = {
 
         if(result.value != bodHTML) {
           browser.assert.fail(bodHTML, result.value, "The pages' HTML tags do not match.")
+        }
+        else {
+          browser.assert.equal(bodHTML, result.value, "The pages' HTML tags are the same.")
         }
       })
 

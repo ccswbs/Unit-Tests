@@ -1,13 +1,13 @@
 //title_compare.js created by Joshua Pinsent
 //This script compares the titles of two specified webpages. 
-//Args: The urls to be compared (argv[2], argv[3])
+//Args: The urls to be compared (argv[4], argv[5])
 //Failures: Page titles do not match
 var titleOld;
 
 module.exports = {
   'Title Compare' : function(browser) {
     browser
-      .url(process.argv[2])
+      .url(process.argv[4])
       .useXpath()
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")
@@ -25,7 +25,7 @@ module.exports = {
 
     'Open New Page' : function(browser) {
     browser
-      .url(process.argv[3])
+      .url(process.argv[5])
       .useXpath()
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")      
