@@ -1,6 +1,6 @@
 //listing.js created by Joshua Pinsent
 //This script tests the number of articles on a listing page and ensures that there are ten or less.
-//Args: The url to be tested (argv[4])
+//Args: The url to be tested (argv[4]).
 //Failures: More than 10 items on page, Next button is present & less than 10 items on page,
 //          Link is not a uoguelph website, Body content does not load.
 var count = 0;

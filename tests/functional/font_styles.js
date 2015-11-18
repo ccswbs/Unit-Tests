@@ -3,6 +3,7 @@
 //Args: The url to be tested (argv[4])
 //Failures: Style attribute contains 'color' or 'font' styling,
 //          Link is not a uoguelph website, Body content does not load.
+var errors = 0;
 
 module.exports = {
   'Font Size Test' : function(browser) {
@@ -24,16 +25,21 @@ module.exports = {
 
           //Fails if 'font' or 'color' is present in attribute
           if (style.value.indexOf("font") != -1) {
-            console.log("Contains font attribute");
             browser.verify.fail("font", null, "The following tag contains font styling: " + style.value);
+            errors = 1;
           }
           else if (style.value.indexOf("color") != -1) {
-            console.log("Contains color attribute");
             browser.verify.fail("color", null, "The following tag contains color styling: " + style.value);
+            errors = 1;
           }
         });
       }
     })
+
+    if (errors == 0) {
+      browser.assert.equal(errors, 0, "No tags in the content are using styling attributes.");
+    }
+
     browser.end();
   }
 };

@@ -1,7 +1,8 @@
 //validate.js created by Joshua Pinsent
 //This script plugs a link into the W3C Markup Validation Service and returns whether it passed or failed.
 //Args: The url to be tested (argv[4]).
-//Failures: An error is generated via the W3C validator.
+//Failures: The validation is run with a fatal error (page doesn't load), An error is generated via the W3C validator,
+//          The body content doesn't load.
 var errors = 0;
 
 module.exports = {
@@ -24,6 +25,8 @@ module.exports = {
   //Count the errors on the page
   'Error Check' : function(browser) {
     browser
+    .waitForElementNotPresent("//ol[@id='fatal-errors']", 1000)
+
     .execute(function() {
         return document.querySelectorAll('.error').length;
       }, 
@@ -44,6 +47,10 @@ module.exports = {
         });
       }
     }
+    else {
+      browser.assert.equal(errors, 0, "No errors found in validation.");
+    }
+
     browser.end();
   }
 };
