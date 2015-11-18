@@ -22,4 +22,4 @@ fi
 while read line
 do 
 	node nightwatch --test tests/$1/$2 $line
-done < $3 
+done < nodelists/$3 

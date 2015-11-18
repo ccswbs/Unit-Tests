@@ -1,9 +1,0 @@
-14	banner
-11	book
-66	event
-52	faq
-12	feature
-26	news
-107	page
-72	service
-14	social
