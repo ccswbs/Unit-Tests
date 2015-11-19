@@ -4,50 +4,91 @@
             tests="6">
 
   <testsuite name="body_compare"
-    errors="0" failures="1" hostname="" id="" package="comparison" skipped="5"
-    tests="6" time="0.000" timestamp="Wed, 11 Nov 2015 17:03:54 GMT">
+    errors="0" failures="1" hostname="" id="" package="comparison" skipped="0"
+    tests="6" time="0.000" timestamp="Thu, 19 Nov 2015 18:47:25 GMT">
   
-    <testcase name="Body Content Compare" time="5.165" assertions="1">  <failure message="Checking that link is a uoguelph website.">    at Object.module.exports.Body Content Compare (/home/autobox/Desktop/Unit Tests/tests/comparison/body_compare.js:14:15)
-    at Module.call (/home/autobox/node_modules/nightwatch/lib/runner/module.js:63:34)
-    at /home/autobox/node_modules/nightwatch/lib/runner/testcase.js:97:29
-    at _fulfilled (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:796:13)
-    at /home/autobox/node_modules/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:125:13)
-    at doNTCallback0 (node.js:419:9)</failure>
+    <testcase name="Body Content Compare" time="6.508" assertions="2">
+
+    
 
     
     </testcase>
   
+    <testcase name="Get Content String" time="0.3400" assertions="1">
+
+    
+    </testcase>
   
-    
-    <testcase
-      name="Get Content String">
-      <skipped />
+    <testcase name="Get Content HTML" time="0.05600" assertions="0">
     </testcase>
+  
+    <testcase name="Open New Page" time="2.070" assertions="3">
+
     
-    <testcase
-      name="Get Content HTML">
-      <skipped />
+
+    
+
+    
     </testcase>
+  
+    <testcase name="Compare Strings" time="0.2150" assertions="1">
+
     
-    <testcase
-      name="Open New Page">
-      <skipped />
     </testcase>
+  
+    <testcase name="Compare HTML" time="0.1580" assertions="1">  <failure message="Failed [fail]: (The pages&#39; HTML tags do not match.)">Failed [fail]: (The pages&#39; HTML tags do not match.): Failed [fail]: (The pages&#39; HTML tags do not match.) - Expected &quot;&lt;p class=&quot;&quot;&gt;Extract from Alice in Wonderland&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/aodademo/sites/uoguelph.ca.aodademo/files/DirectoryServices.gif&quot; style=&quot;width: 60px; height: 60px;&quot;&gt;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;I mean what I say,&#39;&lt;strong&gt; &lt;/strong&gt;the Mock Turtle replied in an offended tone. And the Gryphon added &#39;Come, let&#39;s hear some of YOUR adventures.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;I could tell you my adventures—beginning from this morning,&#39; said Alice a little timidly: &#39;but it&#39;s no use going back to yesterday, because I was a different person then.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;Explain all that,&#39; said the Mock Turtle.&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;No, no! The adventures first,&#39; said the Gryphon in an impatient tone: &#39;explanations take such a dreadful time.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;So Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so VERY wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating &#39;YOU ARE OLD, FATHER WILLIAM,&#39; to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said &#39;That&#39;s very curious.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;It&#39;s all about as curious as it can be,&#39; said the Gryphon.&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;It all came different!&#39; the Mock Turtle repeated thoughtfully. &#39;I should like to hear her try and repeat something now. Tell her to begin.&#39; He looked at the Gryphon as if he thought it had some kind of authority over Alice.&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;Stand up and repeat &quot;&#39;TIS THE VOICE OF THE SLUGGARD,&quot;&#39; said the Gryphon.&lt;/p&gt;
+&quot; but got: &quot;&lt;h2&gt;Extract from Alice in Wonderland&lt;/h2&gt;
+
+&lt;p class=&quot;&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/aodademo/sites/uoguelph.ca.aodademo/files/DirectoryServices.gif&quot; style=&quot;width: 60px; height: 60px;&quot;&gt;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&lt;strong&gt;&lt;em&gt;&#39;I mean what I say,&#39;&lt;/em&gt; &lt;/strong&gt;the Mock Turtle replied in an offended tone. And the Gryphon added &#39;Come, let&#39;s hear some of YOUR adventures.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;I could tell you my adventures—beginning from this morning,&#39; said Alice a little timidly: &#39;but it&#39;s no use going back to yesterday, because I was a different person then.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;Explain all that,&#39; said the Mock Turtle.&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;No, no! The adventures first,&#39; said the Gryphon in an impatient tone: &#39;explanations take such a dreadful time.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;So Alice began telling them her adventures from the time when she first saw the White Rabbit. She was a little nervous about it just at first, the two creatures got so close to her, one on each side, and opened their eyes and mouths so VERY wide, but she gained courage as she went on. Her listeners were perfectly quiet till she got to the part about her repeating &#39;YOU ARE OLD, FATHER WILLIAM,&#39; to the Caterpillar, and the words all coming different, and then the Mock Turtle drew a long breath, and said &#39;That&#39;s very curious.&#39;&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;It&#39;s all about as curious as it can be,&#39; said the Gryphon.&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;It all came different!&#39; the Mock Turtle repeated thoughtfully. &#39;I should like to hear her try and repeat something now. Tell her to begin.&#39; He looked at the Gryphon as if he thought it had some kind of authority over Alice.&lt;/p&gt;
+
+&lt;p class=&quot;&quot;&gt;&#39;Stand up and repeat &quot;&#39;TIS THE VOICE OF THE SLUGGARD,&quot;&#39; said the Gryphon.&lt;/p&gt;
+&quot;
+    at Object.fail (/home/autobox/node_modules/nightwatch/lib/core/api.js:67:24)
+    at Object.&lt;anonymous&gt; (/home/autobox/Desktop/Unit-Tests/tests/comparison/body_compare.js:71:26)
+    at HttpRequest.&lt;anonymous&gt; (/home/autobox/node_modules/nightwatch/lib/index.js:322:20)
+    at emitTwo (events.js:87:13)
+    at HttpRequest.emit (events.js:172:7)
+    at HttpRequest.&lt;anonymous&gt; (/home/autobox/node_modules/nightwatch/lib/index.js:351:15)
+    at emitThree (events.js:97:13)
+    at HttpRequest.emit (events.js:175:7)
+    at IncomingMessage.&lt;anonymous&gt; (/home/autobox/node_modules/nightwatch/lib/http/request.js:155:16)
+    at emitNone (events.js:72:20)</failure>
+
     
-    <testcase
-      name="Compare Strings">
-      <skipped />
     </testcase>
-    
-    <testcase
-      name="Compare HTML">
-      <skipped />
-    </testcase>
-    
+  
   
   </testsuite>
 </testsuites>

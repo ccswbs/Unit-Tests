@@ -1,50 +1,32 @@
-15:56:43.773 INFO - Launching a standalone Selenium Server
+13:56:14.830 INFO - Launching a standalone Selenium Server
 Setting system property webdriver.chrome.driver to bin/chromedriver.exe
-15:56:43.810 INFO - Java: Oracle Corporation 24.85-b03
-15:56:43.812 INFO - OS: Linux 4.2.0-18-generic amd64
-15:56:43.832 INFO - v2.48.0, with Core v2.48.0. Built from revision 41bccdd
-15:56:43.902 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+13:56:14.869 INFO - Java: Oracle Corporation 24.85-b03
+13:56:14.870 INFO - OS: Linux 4.2.0-18-generic amd64
+13:56:14.892 INFO - v2.48.0, with Core v2.48.0. Built from revision 41bccdd
+13:56:14.965 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
 registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match the current platform LINUX
-15:56:43.903 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+13:56:14.965 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
 registration capabilities Capabilities [{platform=WINDOWS, browserName=MicrosoftEdge, version=}] does not match the current platform LINUX
-15:56:43.903 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-15:56:43.903 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-15:56:43.969 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-15:56:43.969 INFO - Selenium Server is up and running
-15:56:44.329 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Title Compare}]])
-15:56:44.339 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Title Compare}]
-15:56:48.061 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Title Compare}]]
-15:56:48.086 INFO - Executing: [get: https://aoda.web.uoguelph.ca/aodademo/link-test])
-15:56:48.412 INFO - Done: [get: https://aoda.web.uoguelph.ca/aodademo/link-test]
-15:56:48.440 INFO - Executing: [get current url])
-15:56:50.313 INFO - Done: [get current url]
-15:56:50.321 INFO - Executing: [find elements: By.xpath: //body])
-15:56:50.459 INFO - Done: [find elements: By.xpath: //body]
-15:56:50.465 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]])
-15:56:50.475 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]]
-15:56:50.484 INFO - Executing: [find elements: By.xpath: //h1])
-15:56:50.518 INFO - Done: [find elements: By.xpath: //h1]
-15:56:50.521 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
-15:56:50.549 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
-15:56:50.553 INFO - Executing: [find element: By.xpath: //h1])
-15:56:50.583 INFO - Done: [find element: By.xpath: //h1]
-15:56:50.591 INFO - Executing: [get text: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
-15:56:50.624 INFO - Done: [get text: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
-15:56:50.631 INFO - Executing: [get: https://aoda.web.uoguelph.ca/aodademo/link-test-2])
-15:56:51.437 INFO - Done: [get: https://aoda.web.uoguelph.ca/aodademo/link-test-2]
-15:56:51.442 INFO - Executing: [get current url])
-15:56:51.469 INFO - Done: [get current url]
-15:56:51.485 INFO - Executing: [find elements: By.xpath: //body])
-15:56:51.515 INFO - Done: [find elements: By.xpath: //body]
-15:56:51.518 INFO - Executing: [is displayed: 2 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]])
-15:56:51.532 INFO - Done: [is displayed: 2 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]]
-15:56:52.544 INFO - Executing: [find elements: By.xpath: //h1])
-15:56:52.575 INFO - Done: [find elements: By.xpath: //h1]
-15:56:52.581 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
-15:56:52.603 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
-15:56:52.612 INFO - Executing: [find element: By.xpath: //h1])
-15:56:52.670 INFO - Done: [find element: By.xpath: //h1]
-15:56:52.675 INFO - Executing: [get text: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
-15:56:52.728 INFO - Done: [get text: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
-15:56:52.734 INFO - Executing: [delete session: db2f9bbf-13e2-4cb0-8626-e9cff4ced7d0])
-15:56:52.849 INFO - Done: [delete session: db2f9bbf-13e2-4cb0-8626-e9cff4ced7d0]
+13:56:14.966 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+13:56:14.966 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+13:56:15.049 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+13:56:15.049 INFO - Selenium Server is up and running
+13:56:15.432 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Functional / Pagination}]])
+13:56:15.442 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Functional / Pagination}]
+13:56:19.085 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Functional / Pagination}]]
+13:56:19.109 INFO - Executing: [get: https://aoda.web.uoguelph.ca/aodademo/])
+13:56:19.374 INFO - Done: [get: https://aoda.web.uoguelph.ca/aodademo/]
+13:56:19.407 INFO - Executing: [get current url])
+13:56:22.004 INFO - Done: [get current url]
+13:56:22.012 INFO - Executing: [find elements: By.xpath: //body])
+13:56:22.157 INFO - Done: [find elements: By.xpath: //body]
+13:56:22.163 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (a8d51ceb-ea21-48e9-8c1a-706b5fa4bd74)] -> xpath: //body]])
+13:56:22.173 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (a8d51ceb-ea21-48e9-8c1a-706b5fa4bd74)] -> xpath: //body]]
+13:56:22.183 INFO - Executing: [find elements: By.xpath: //ul[@class='pagination']])
+13:56:22.215 INFO - Done: [find elements: By.xpath: //ul[@class='pagination']]
+13:56:22.723 INFO - Executing: [find elements: By.xpath: //ul[@class='pagination']])
+13:56:22.745 INFO - Done: [find elements: By.xpath: //ul[@class='pagination']]
+13:56:23.251 INFO - Executing: [find elements: By.xpath: //ul[@class='pagination']])
+13:56:23.278 INFO - Done: [find elements: By.xpath: //ul[@class='pagination']]
+13:56:23.284 INFO - Executing: [delete session: 58154bb9-274f-485b-800b-1dbe70a7f266])
+13:56:23.392 INFO - Done: [delete session: 58154bb9-274f-485b-800b-1dbe70a7f266]

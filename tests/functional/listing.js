@@ -33,6 +33,6 @@ module.exports = {
         }
       })
 
-      .end()
+      .end();
     }
 };

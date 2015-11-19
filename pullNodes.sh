@@ -4,7 +4,11 @@ RED='\033[0:31m'
 
 if [ $# -lt 4 ]; then
 	echo -e "\e[31mERROR\e[0m"
+<<<<<<< HEAD
+	echo "Usage: ./pullNodes [db_name] [migration_table_name] [base_url]"
+=======
 	echo "Usage: ./pullNodes [db_name] [migration_table_name] [new_base_url] [old_base_url]"
+>>>>>>> 05b61e5e742dd3783b7ef12e351f790cea22d219
 	exit
 fi
 

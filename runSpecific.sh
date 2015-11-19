@@ -11,7 +11,7 @@ if [ $# -lt 3 ]; then
 	exit
 fi
 # Checks that the nodelist file specified exists
-if [ ! -f $3 ]; then
+if [ ! -f nodelists/$3 ]; then
 	echo -e "\e[31mERROR\e[0m"
 	echo "File '" $3 "' not found! Make sure the name of the nodelist file is correct and the path to it is specified."
 	exit
@@ -23,4 +23,8 @@ while read line
 do 
 	node nightwatch --test tests/$1/$2 $line
 done < nodelists/$3 
+<<<<<<< HEAD
+node nightwatch --test tests/$1/$2 $line # runs the command one extra time for the final line
+=======
 node nightwatch --test tests/$1/$2 $line
+>>>>>>> 05b61e5e742dd3783b7ef12e351f790cea22d219
