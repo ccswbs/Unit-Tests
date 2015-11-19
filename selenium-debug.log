@@ -1,44 +1,50 @@
-11:50:03.785 INFO - Launching a standalone Selenium Server
+15:56:43.773 INFO - Launching a standalone Selenium Server
 Setting system property webdriver.chrome.driver to bin/chromedriver.exe
-11:50:03.866 INFO - Java: Oracle Corporation 24.85-b03
-11:50:03.867 INFO - OS: Linux 4.2.0-18-generic amd64
-11:50:03.889 INFO - v2.48.0, with Core v2.48.0. Built from revision 41bccdd
-11:50:03.993 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+15:56:43.810 INFO - Java: Oracle Corporation 24.85-b03
+15:56:43.812 INFO - OS: Linux 4.2.0-18-generic amd64
+15:56:43.832 INFO - v2.48.0, with Core v2.48.0. Built from revision 41bccdd
+15:56:43.902 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
 registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match the current platform LINUX
-11:50:03.994 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+15:56:43.903 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
 registration capabilities Capabilities [{platform=WINDOWS, browserName=MicrosoftEdge, version=}] does not match the current platform LINUX
-11:50:03.995 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-11:50:03.995 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-11:50:04.073 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-11:50:04.074 INFO - Selenium Server is up and running
-11:50:04.464 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Breadcrumb}]])
-11:50:04.474 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Breadcrumb}]
-11:50:07.683 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Breadcrumb}]]
-11:50:07.725 INFO - Executing: [get: http://www.uoguelph.ca/ccs/news])
-11:50:07.984 INFO - Done: [get: http://www.uoguelph.ca/ccs/news]
-11:50:08.011 INFO - Executing: [get current url])
-11:50:09.484 INFO - Done: [get current url]
-11:50:09.492 INFO - Executing: [find elements: By.xpath: //body])
-11:50:09.635 INFO - Done: [find elements: By.xpath: //body]
-11:50:09.641 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (29e81e87-89f7-4b84-b732-d7c32764e183)] -> xpath: //body]])
-11:50:09.650 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (29e81e87-89f7-4b84-b732-d7c32764e183)] -> xpath: //body]]
-11:50:09.660 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
-        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
-      }.apply(window, passedArgs);, []])
-11:50:09.686 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
-        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
-      }.apply(window, passedArgs);, []]
-11:50:09.692 INFO - Executing: [find element: By.cssSelector: ol[class='breadcrumb'] li:nth-child(1)])
-11:50:09.708 INFO - Done: [find element: By.cssSelector: ol[class='breadcrumb'] li:nth-child(1)]
-11:50:09.712 INFO - Executing: [get text: 1 [[FirefoxDriver: firefox on LINUX (29e81e87-89f7-4b84-b732-d7c32764e183)] -> css selector: ol[class='breadcrumb'] li:nth-child(1)]])
-11:50:09.749 INFO - Done: [get text: 1 [[FirefoxDriver: firefox on LINUX (29e81e87-89f7-4b84-b732-d7c32764e183)] -> css selector: ol[class='breadcrumb'] li:nth-child(1)]]
-11:50:09.754 INFO - Executing: [get: http://aoda.web.uoguelph.ca/ccs/news])
-11:50:10.364 INFO - Done: [get: http://aoda.web.uoguelph.ca/ccs/news]
-11:50:10.368 INFO - Executing: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
-        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
-      }.apply(window, passedArgs);, []])
-11:50:10.390 INFO - Done: [execute script: var passedArgs = Array.prototype.slice.call(arguments,0); return function () {
-        return document.querySelectorAll("ol[class='breadcrumb'] li").length;
-      }.apply(window, passedArgs);, []]
-11:50:10.398 INFO - Executing: [delete session: 1412a754-3a80-4bcc-a958-9b752928caee])
-11:50:10.504 INFO - Done: [delete session: 1412a754-3a80-4bcc-a958-9b752928caee]
+15:56:43.903 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:56:43.903 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+15:56:43.969 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:56:43.969 INFO - Selenium Server is up and running
+15:56:44.329 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Title Compare}]])
+15:56:44.339 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Title Compare}]
+15:56:48.061 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=firefox, name=Comparison / Title Compare}]]
+15:56:48.086 INFO - Executing: [get: https://aoda.web.uoguelph.ca/aodademo/link-test])
+15:56:48.412 INFO - Done: [get: https://aoda.web.uoguelph.ca/aodademo/link-test]
+15:56:48.440 INFO - Executing: [get current url])
+15:56:50.313 INFO - Done: [get current url]
+15:56:50.321 INFO - Executing: [find elements: By.xpath: //body])
+15:56:50.459 INFO - Done: [find elements: By.xpath: //body]
+15:56:50.465 INFO - Executing: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]])
+15:56:50.475 INFO - Done: [is displayed: 0 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]]
+15:56:50.484 INFO - Executing: [find elements: By.xpath: //h1])
+15:56:50.518 INFO - Done: [find elements: By.xpath: //h1]
+15:56:50.521 INFO - Executing: [is displayed: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
+15:56:50.549 INFO - Done: [is displayed: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
+15:56:50.553 INFO - Executing: [find element: By.xpath: //h1])
+15:56:50.583 INFO - Done: [find element: By.xpath: //h1]
+15:56:50.591 INFO - Executing: [get text: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
+15:56:50.624 INFO - Done: [get text: 1 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
+15:56:50.631 INFO - Executing: [get: https://aoda.web.uoguelph.ca/aodademo/link-test-2])
+15:56:51.437 INFO - Done: [get: https://aoda.web.uoguelph.ca/aodademo/link-test-2]
+15:56:51.442 INFO - Executing: [get current url])
+15:56:51.469 INFO - Done: [get current url]
+15:56:51.485 INFO - Executing: [find elements: By.xpath: //body])
+15:56:51.515 INFO - Done: [find elements: By.xpath: //body]
+15:56:51.518 INFO - Executing: [is displayed: 2 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]])
+15:56:51.532 INFO - Done: [is displayed: 2 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //body]]
+15:56:52.544 INFO - Executing: [find elements: By.xpath: //h1])
+15:56:52.575 INFO - Done: [find elements: By.xpath: //h1]
+15:56:52.581 INFO - Executing: [is displayed: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
+15:56:52.603 INFO - Done: [is displayed: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
+15:56:52.612 INFO - Executing: [find element: By.xpath: //h1])
+15:56:52.670 INFO - Done: [find element: By.xpath: //h1]
+15:56:52.675 INFO - Executing: [get text: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]])
+15:56:52.728 INFO - Done: [get text: 3 [[FirefoxDriver: firefox on LINUX (7382906a-0157-4422-82bd-35c38e70b70b)] -> xpath: //h1]]
+15:56:52.734 INFO - Executing: [delete session: db2f9bbf-13e2-4cb0-8626-e9cff4ced7d0])
+15:56:52.849 INFO - Done: [delete session: db2f9bbf-13e2-4cb0-8626-e9cff4ced7d0]

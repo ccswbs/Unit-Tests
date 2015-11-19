@@ -18,13 +18,19 @@ module.exports = {
     //End test if pagination is not present
     'Pagination Present' : function (browser) {
       browser
+      .waitForElementPresent("//ul[@class='pagination']", 1000)
+    },
+
+    'Start at First Page' : function(browser) {
+      browser
       .execute(function() {
-        return document.querySelectorAll("ul[class='pagination']").length;
+        return document.querySelectorAll('li.pager-first.first').length;
       }, 
-      function(count){
-        if (count.value == 0) {
-          browser.assert.equal(count.value, 0, "There is no pagination on this page.");
-          browser.end();
+      function(result){
+        if (result.value != 0) {
+          browser.click("//li[@class='pager-first first']/a");
+          browser.pause(1000);
+          browser.waitForElementVisible('//body', 1000);
         }
       })
     },
