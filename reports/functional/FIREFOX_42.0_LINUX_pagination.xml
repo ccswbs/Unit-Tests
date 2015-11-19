@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="1"
-            tests="7">
+            tests="8">
 
   <testsuite name="pagination"
     errors="0" failures="1" hostname="" id="" package="functional" skipped="6"
-    tests="7" time="0.000" timestamp="Wed, 11 Nov 2015 17:04:12 GMT">
+    tests="8" time="0.000" timestamp="Thu, 19 Nov 2015 18:56:23 GMT">
   
-    <testcase name="Pagination" time="3.580" assertions="1">  <failure message="Checking that link is a uoguelph website.">    at Object.module.exports.Pagination (/home/autobox/Desktop/Unit Tests/tests/functional/pagination.js:15:15)
+    <testcase name="Pagination" time="6.988" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Pagination Present" time="1.215" assertions="1">  <failure message="Timed out while waiting for element &lt;//ul[@class=&#39;pagination&#39;]&gt; to be present for 1000 milliseconds.">    at Object.module.exports.Pagination Present (/home/autobox/Desktop/Unit-Tests/tests/functional/pagination.js:21:8)
     at Module.call (/home/autobox/node_modules/nightwatch/lib/runner/module.js:63:34)
     at /home/autobox/node_modules/nightwatch/lib/runner/testcase.js:97:29
     at _fulfilled (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:834:54)
@@ -24,7 +31,7 @@
   
     
     <testcase
-      name="Pagination Present">
+      name="Start at First Page">
       <skipped />
     </testcase>
     

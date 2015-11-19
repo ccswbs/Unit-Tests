@@ -1,30 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="4">
 
   <testsuite name="validate"
-    errors="0" failures="0" hostname="" id="" package="functional" skipped="0"
-    tests="4" time="0.000" timestamp="Wed, 11 Nov 2015 17:04:24 GMT">
+    errors="0" failures="1" hostname="" id="" package="functional" skipped="1"
+    tests="4" time="0.000" timestamp="Thu, 19 Nov 2015 18:51:40 GMT">
   
-    <testcase name="Validator Test" time="4.136" assertions="1">
+    <testcase name="Validator Test" time="6.837" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Input URL" time="1.608" assertions="2">
+    <testcase name="Input URL" time="2.403" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Error Check" time="0.01100" assertions="0">
+    <testcase name="Error Check" time="1.233" assertions="1">  <failure message="Timed out while waiting for element &lt;//ol[@id=&#39;fatal-errors&#39;]&gt; to be removed for 1000 milliseconds.">    at Object.module.exports.Error Check (/home/autobox/Desktop/Unit-Tests/tests/functional/validate.js:28:6)
+    at Module.call (/home/autobox/node_modules/nightwatch/lib/runner/module.js:63:34)
+    at /home/autobox/node_modules/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /home/autobox/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at doNTCallback0 (node.js:419:9)</failure>
+
+    
     </testcase>
   
-    <testcase name="Error Log" time="0.1070" assertions="0">
-    </testcase>
   
+    
+    <testcase
+      name="Error Log">
+      <skipped />
+    </testcase>
+    
   
   </testsuite>
 </testsuites>

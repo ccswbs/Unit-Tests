@@ -5,21 +5,21 @@
 
   <testsuite name="title_compare"
     errors="0" failures="1" hostname="" id="" package="comparison" skipped="0"
-    tests="4" time="0.000" timestamp="Wed, 18 Nov 2015 20:56:52 GMT">
+    tests="4" time="0.000" timestamp="Thu, 19 Nov 2015 18:46:31 GMT">
   
-    <testcase name="Title Compare" time="6.396" assertions="2">
+    <testcase name="Title Compare" time="6.245" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Get First Title" time="0.1450" assertions="1">
+    <testcase name="Get First Title" time="0.1330" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Open New Page" time="1.979" assertions="3">
+    <testcase name="Open New Page" time="1.965" assertions="3">
 
     
 
@@ -28,9 +28,9 @@
     
     </testcase>
   
-    <testcase name="Compare Titles" time="0.2460" assertions="1">  <failure message="Failed [fail]: (The pages&#39; titles do not match.)">Failed [fail]: (The pages&#39; titles do not match.): Failed [fail]: (The pages&#39; titles do not match.) - Expected &quot;Link test 2&quot; but got: &quot;Link test&quot;
+    <testcase name="Compare Titles" time="0.2370" assertions="1">  <failure message="Failed [fail]: (The pages&#39; titles do not match.)">Failed [fail]: (The pages&#39; titles do not match.): Failed [fail]: (The pages&#39; titles do not match.) - Expected &quot;Title Compare Fail&quot; but got: &quot;Title Compare Pass&quot;
     at Object.fail (/home/autobox/node_modules/nightwatch/lib/core/api.js:67:24)
-    at Object.&lt;anonymous&gt; (/home/autobox/Desktop/Untitled Folder/Unit-Tests/tests/comparison/title_compare.js:41:26)
+    at Object.&lt;anonymous&gt; (/home/autobox/Desktop/Unit-Tests/tests/comparison/title_compare.js:41:26)
     at Object.&lt;anonymous&gt; (/home/autobox/node_modules/nightwatch/lib/api/element-commands.js:360:20)
     at HttpRequest.&lt;anonymous&gt; (/home/autobox/node_modules/nightwatch/lib/index.js:322:20)
     at emitTwo (events.js:87:13)
