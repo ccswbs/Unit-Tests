@@ -1,6 +1,6 @@
 //breadcrumb_enhanced.js created by Joshua Pinsent
 //This script compares breadcrumbs between two websites by checking the levels, strings and urls of each breadcrumb.
-//Args: The urls to be compared (argv[2], arg[3]).
+//Args: The urls to be compared (argv[4], arg[5]).
 //Failures: The levels do not match, The strings do not match, The urls do not match,
 //          Link is not a uoguelph website, Body content does not load.
 var count = 0;
@@ -10,7 +10,7 @@ var crumb_url = [];
 module.exports = {
   'Breadcrumb Test' : function(browser) {
     browser
-      .url(process.argv[2])
+      .url(process.argv[4])
       .useXpath()
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")
@@ -50,7 +50,7 @@ module.exports = {
 
     'Open New Page' : function(browser) {
     browser
-      .url(process.argv[3])
+      .url(process.argv[5])
       .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
       .waitForElementVisible("//body", 1000, "Loading body.")
     },
