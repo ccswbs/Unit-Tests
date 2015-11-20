@@ -5,21 +5,21 @@
 
   <testsuite name="validate"
     errors="0" failures="1" hostname="" id="" package="functional" skipped="1"
-    tests="4" time="0.000" timestamp="Fri, 20 Nov 2015 17:01:25 GMT">
+    tests="4" time="0.000" timestamp="Fri, 20 Nov 2015 21:28:16 GMT">
   
-    <testcase name="Validator Test" time="3.825" assertions="1">
+    <testcase name="Validator Test" time="4.235" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Input URL" time="1.775" assertions="2">
+    <testcase name="Input URL" time="2.445" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Error Check" time="1.195" assertions="1">  <failure message="Timed out while waiting for element &lt;//ol[@id=&#39;fatal-errors&#39;]&gt; to be removed for 1000 milliseconds.">    at Object.module.exports.Error Check (/home/autobox/Desktop/Unit-Tests/tests/functional/validate.js:28:6)
+    <testcase name="Error Check" time="1.197" assertions="1">  <failure message="Timed out while waiting for element &lt;//ol[@id=&#39;fatal-errors&#39;]&gt; to be removed for 1000 milliseconds.">    at Object.module.exports.Error Check (/home/autobox/Desktop/Unit-Tests/tests/functional/validate.js:28:6)
     at Module.call (/home/autobox/node_modules/nightwatch/lib/runner/module.js:63:34)
     at /home/autobox/node_modules/nightwatch/lib/runner/testcase.js:97:29
     at _fulfilled (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:834:54)

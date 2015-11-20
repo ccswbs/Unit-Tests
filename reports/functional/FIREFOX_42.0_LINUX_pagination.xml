@@ -5,16 +5,16 @@
 
   <testsuite name="pagination"
     errors="0" failures="1" hostname="" id="" package="functional" skipped="6"
-    tests="8" time="0.000" timestamp="Fri, 20 Nov 2015 17:01:12 GMT">
+    tests="8" time="0.000" timestamp="Fri, 20 Nov 2015 21:27:56 GMT">
   
-    <testcase name="Pagination" time="4.957" assertions="2">
+    <testcase name="Pagination" time="4.155" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Pagination Present" time="1.248" assertions="1">  <failure message="Timed out while waiting for element &lt;//ul[@class=&#39;pagination&#39;]&gt; to be present for 1000 milliseconds.">    at Object.module.exports.Pagination Present (/home/autobox/Desktop/Unit-Tests/tests/functional/pagination.js:21:8)
+    <testcase name="Pagination Present" time="1.200" assertions="1">  <failure message="Timed out while waiting for element &lt;//ul[@class=&#39;pagination&#39;]&gt; to be present for 1000 milliseconds.">    at Object.module.exports.Pagination Present (/home/autobox/Desktop/Unit-Tests/tests/functional/pagination.js:21:8)
     at Module.call (/home/autobox/node_modules/nightwatch/lib/runner/module.js:63:34)
     at /home/autobox/node_modules/nightwatch/lib/runner/testcase.js:97:29
     at _fulfilled (/home/autobox/node_modules/nightwatch/node_modules/q/q.js:834:54)

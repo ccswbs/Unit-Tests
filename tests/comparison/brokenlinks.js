@@ -64,7 +64,7 @@ module.exports = {
 
  'Open Old Page' : function(browser) {
   browser
-    .url(process.argv[3])
+    .url(process.argv[4])
     .pause(1000)
     .assert.urlContains("uoguelph.ca", "Checking that link is a uoguelph website.")
     .waitForElementVisible("body", 1000, "Loading body.")
