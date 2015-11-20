@@ -15,7 +15,7 @@ fi
 #3) pipes to sed to add second URL
 #4) strips first line (SQL column names)
 #5) then redirects to text file
-drush @aoda.$1.dev sql-query "SELECT sourceid1,destid1 from "$1"."$2"" \
+drush @aoda.$1.dev sql-query "SELECT destid1,sourceid1 from "$1"."$2"" \
 | sed -e 's_^[0-9]*_'$3'/node/&_' \
 | sed -e 's_[0-9]*$_ '$4'/node/&_' \
 | sed -n '2,$p' \
