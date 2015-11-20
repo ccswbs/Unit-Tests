@@ -5,16 +5,16 @@
 
   <testsuite name="listing"
     errors="0" failures="0" hostname="" id="" package="functional" skipped="0"
-    tests="2" time="0.000" timestamp="Thu, 19 Nov 2015 18:55:25 GMT">
+    tests="2" time="0.000" timestamp="Fri, 20 Nov 2015 17:01:05 GMT">
   
-    <testcase name="Listing Item Count" time="7.363" assertions="2">
+    <testcase name="Listing Item Count" time="4.807" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Listing Count" time="0.1290" assertions="1">
+    <testcase name="Listing Count" time="0.1500" assertions="1">
 
     
     </testcase>

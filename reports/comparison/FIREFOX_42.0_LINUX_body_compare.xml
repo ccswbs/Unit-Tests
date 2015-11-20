@@ -5,38 +5,38 @@
 
   <testsuite name="body_compare"
     errors="0" failures="1" hostname="" id="" package="comparison" skipped="0"
-    tests="6" time="0.000" timestamp="Thu, 19 Nov 2015 18:47:25 GMT">
+    tests="6" time="0.000" timestamp="Fri, 20 Nov 2015 17:00:27 GMT">
   
-    <testcase name="Body Content Compare" time="6.508" assertions="2">
+    <testcase name="Body Content Compare" time="6.063" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Get Content String" time="0.3400" assertions="1">
+    <testcase name="Get Content String" time="0.3240" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Get Content HTML" time="0.05600" assertions="0">
+    <testcase name="Get Content HTML" time="0.04600" assertions="0">
     </testcase>
   
-    <testcase name="Open New Page" time="2.070" assertions="3">
+    <testcase name="Open New Page" time="2.076" assertions="3">
 
     
 
     
-
-    
-    </testcase>
-  
-    <testcase name="Compare Strings" time="0.2150" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Compare HTML" time="0.1580" assertions="1">  <failure message="Failed [fail]: (The pages&#39; HTML tags do not match.)">Failed [fail]: (The pages&#39; HTML tags do not match.): Failed [fail]: (The pages&#39; HTML tags do not match.) - Expected &quot;&lt;p class=&quot;&quot;&gt;Extract from Alice in Wonderland&lt;/p&gt;
+    <testcase name="Compare Strings" time="0.2050" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Compare HTML" time="0.1870" assertions="1">  <failure message="Failed [fail]: (The pages&#39; HTML tags do not match.)">Failed [fail]: (The pages&#39; HTML tags do not match.): Failed [fail]: (The pages&#39; HTML tags do not match.) - Expected &quot;&lt;p class=&quot;&quot;&gt;Extract from Alice in Wonderland&lt;/p&gt;
 
 &lt;p class=&quot;&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;/aodademo/sites/uoguelph.ca.aodademo/files/DirectoryServices.gif&quot; style=&quot;width: 60px; height: 60px;&quot;&gt;&lt;/p&gt;
 

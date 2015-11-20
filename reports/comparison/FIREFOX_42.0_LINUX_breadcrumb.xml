@@ -5,29 +5,29 @@
 
   <testsuite name="breadcrumb"
     errors="0" failures="0" hostname="" id="" package="comparison" skipped="0"
-    tests="5" time="0.000" timestamp="Thu, 19 Nov 2015 19:16:21 GMT">
+    tests="5" time="0.000" timestamp="Fri, 20 Nov 2015 17:00:34 GMT">
   
-    <testcase name="Breadcrumb Test" time="5.915" assertions="2">
+    <testcase name="Breadcrumb Test" time="5.025" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Level Count" time="0.03100" assertions="1">
+    <testcase name="Level Count" time="0.05200" assertions="0">
+    </testcase>
+  
+    <testcase name="Get Breadcrumb Strings" time="0.06900" assertions="0">
+    </testcase>
+  
+    <testcase name="Level Compare" time="0.9110" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Get Breadcrumb Strings" time="0.001000" assertions="0">
-    </testcase>
-  
-    <testcase name="Level Compare" time="1.967" assertions="1">
+    <testcase name="Compare Breadcrumb Strings" time="0.2140" assertions="1">
 
     
-    </testcase>
-  
-    <testcase name="Compare Breadcrumb Strings" time="0.1100" assertions="0">
     </testcase>
   
   

@@ -106,7 +106,7 @@ module.exports = {
       });
 
       //Go back to previous page
-      browser.url(process.argv[3]);
+      browser.url(process.argv[4]);
       browser.pause(1000);
     }
 
