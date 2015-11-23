@@ -21,6 +21,6 @@ fi
 
 while read line
 do 
-	node nightwatch --test tests/$1/$2 $line
+	node nightwatch --test tests/$1/$2 $line --reporter ./html-reporter.js
 done < nodelists/$3 
-node nightwatch --test tests/$1/$2 $line # runs the command one extra time for the final line
+node nightwatch --test tests/$1/$2 $line --reporter ./html-reporter.js # runs the command one extra time for the final line

@@ -21,6 +21,6 @@ fi
 
 while read line
 do 
-	./nightwatch foo bar $line # adding 2 args 'foo' and 'bar' as filler so scripts can run the same for runAll and runSpecific
+	./nightwatch foo bar $line --reporter ./html-reporter.js # adding 2 args 'foo' and 'bar' as filler so scripts can run the same for runAll and runSpecific
 done < nodelists/$1
-./nightwatch foo bar $line # runs the command one extra time for the final line
+./nightwatch foo bar $line --reporter ./html-reporter.js # runs the command one extra time for the final line
