@@ -19,6 +19,7 @@ public class runTests extends JFrame
    	private JButton go;
 
    	private disabledFieldsHandler disabledListener;
+   	private runScriptsHandler scriptsListener;
      
     // Frame
     public runTests()
@@ -50,6 +51,8 @@ public class runTests extends JFrame
     	go.setForeground(Color.white);
     	go.setFont(new Font ("Papyrus", Font.BOLD, 30));
     	go.setBorder(new LineBorder(new Color(50, 100, 200), 8));
+    	scriptsListener = new runScriptsHandler();
+    	go.addActionListener(scriptsListener);
 
         setTitle("Unit Tests GUI");
         setSize(WIDTH, HEIGHT);
@@ -70,21 +73,50 @@ public class runTests extends JFrame
     }
 
     private class disabledFieldsHandler implements ActionListener
-    	{
-    		public void actionPerformed(ActionEvent e)
-    		{
-				if (runAll.isSelected())
-			    {
-			    	testFolderF.setEditable(false);
-			    	testNameF.setEditable(false);
-			    }
-			    else if (runSpecific.isSelected())
-			    {
-			    	testFolderF.setEditable(true);
-			    	testNameF.setEditable(true);
-			    }
-    		}
-    	}
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			if (runAll.isSelected())
+		    {
+		    	testFolderF.setEditable(false);
+		    	testNameF.setEditable(false);
+		    }
+		    else if (runSpecific.isSelected())
+		    {
+		    	testFolderF.setEditable(true);
+		    	testNameF.setEditable(true);
+		    }
+		}
+	}
+
+	private class runScriptsHandler implements ActionListener
+	{
+		public void actionPerformed(ActionEvent e)
+		{
+			String folder = testFolderF.getText();
+			String test = testNameF.getText();
+			String nodelist = nodeListF.getText();
+
+			if (runAll.isSelected())
+		    {
+		    	try 
+		    	{
+		    		System.out.println("./runAll.sh " + nodelist);
+		    	} catch(Exception x){
+		    		System.exit(0);
+		    	}
+		    }
+		    else if (runSpecific.isSelected())
+		    {
+		    	try 
+		    	{
+		    		System.out.println("./runSpecific.sh " + folder + " " + test + " " + nodelist);
+		    	} catch(Exception x){
+		    		System.exit(0);
+		    	}
+		    }
+		}
+	}
 
 
     // Main function
