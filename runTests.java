@@ -101,8 +101,13 @@ public class runTests extends JFrame
 		    {
 		    	try 
 		    	{
-		    		System.out.println("./runAll.sh " + nodelist);
+		    		go.setEnabled(false);
+		    		ProcessBuilder pb = new ProcessBuilder("./runAll.sh", nodelist);
+		    		Process p = pb.start();
+		    		p.waitFor();
+		    		go.setEnabled(true);
 		    	} catch(Exception x){
+		    		System.out.println("Error running tests.");
 		    		System.exit(0);
 		    	}
 		    }
@@ -110,8 +115,13 @@ public class runTests extends JFrame
 		    {
 		    	try 
 		    	{
-		    		System.out.println("./runSpecific.sh " + folder + " " + test + " " + nodelist);
+		    		go.setEnabled(false);
+		    		ProcessBuilder pb = new ProcessBuilder("./runSpecific.sh", folder, test, nodelist);
+		    		Process p = pb.start();
+		    		p.waitFor();
+		    		go.setEnabled(true);
 		    	} catch(Exception x){
+		    		System.out.println("Error running tests.");
 		    		System.exit(0);
 		    	}
 		    }
