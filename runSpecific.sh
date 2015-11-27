@@ -1,5 +1,27 @@
 #!/bin/bash
 
+# PURPOSE:
+#/////////////
+# This script will run a specific test out of the test folder specified, for every page specified in 
+# the nodelist file given to it. If the test is a comparison, it will read both urls on each line and compare the pages.
+# If the test is a functional, it will ignore the second url on the line and only perform tests on the first one.
+
+
+# ARGS:
+#/////////////
+# ./runSpecific [test_folder] [test_name] [nodelist]
+
+# [test_folder] - Name of the folder the test is stored in (and the type of test it is). 
+#				  Can be either 'functional' or 'comparison'.
+# [test_name] - Name of the test script being run. Must exist in the test folder specified.
+#				i.e. breadcrumb.js
+# [nodelist] - Name of the nodelist either pulled by pullNodes.sh or a custom nodelist for testing purposes.
+#			   i.e. business_aoda-news-nodelist.txt
+
+
+# NOTES:
+#/////////////
+
 RED='\033[0:31m'
 GREEN='\033[0;32m'
 

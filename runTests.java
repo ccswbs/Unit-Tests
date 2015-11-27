@@ -21,7 +21,7 @@ public class runTests extends JFrame
    	private disabledFieldsHandler disabledListener;
    	private runScriptsHandler scriptsListener;
      
-    // Frame
+    // Frame setup
     public runTests()
     {
     	// Init Radio buttons
@@ -54,11 +54,13 @@ public class runTests extends JFrame
     	scriptsListener = new runScriptsHandler();
     	go.addActionListener(scriptsListener);
 
+        // Frame settings
         setTitle("Unit Tests GUI");
         setSize(WIDTH, HEIGHT);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+        // Adding content to pane
         pane = getContentPane();
         pane.setLayout(new GridLayout(0,2,40,40));
         pane.add(runAll);
@@ -72,6 +74,10 @@ public class runTests extends JFrame
     	pane.add(go);
     }
 
+
+    // Event handler: 
+    // WHEN a radio button from runGroup is clicked, 
+    // Disable 'testFolderF' and 'testNameF' fields if 'runAll' is selected
     private class disabledFieldsHandler implements ActionListener
 	{
 		public void actionPerformed(ActionEvent e)
@@ -89,6 +95,11 @@ public class runTests extends JFrame
 		}
 	}
 
+
+    // Event handler:
+    // WHEN 'go' button is clicked, 
+    // Run all scripts with value from 'nodeListF' if 'runAll' is selected, OR
+    // Run specific script with values from 'testFolderF', 'testNameF' and 'nodeListF' if 'runSpecific' is selected
 	private class runScriptsHandler implements ActionListener
 	{
 		public void actionPerformed(ActionEvent e)

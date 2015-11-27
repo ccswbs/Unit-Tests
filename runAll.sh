@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# PURPOSE:
+#/////////////
+# This script will run all unit tests in the Tests/ folder for every page
+# in the nodelist it is given. For comparison tests, both urls are read and compared.
+# For functional tests, only the first url on a line is used. 
+
+
+# ARGS:
+#/////////////
+# ./runAll [nodelist]
+# [nodelist] - Name of the nodelist either pulled by pullNodes.sh or a custom nodelist for testing purposes.
+#			   i.e. business_aoda-news-nodelist.txt
+
+
+# NOTES:
+#/////////////
+
 RED='\033[0:31m'
 GREEN='\033[0;32m'
 
