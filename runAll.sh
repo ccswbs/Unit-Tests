@@ -10,6 +10,7 @@
 # ARGS:
 #/////////////
 # ./runAll [nodelist]
+
 # [nodelist] - Name of the nodelist either pulled by pullNodes.sh or a custom nodelist for testing purposes.
 #			   i.e. business_aoda-news-nodelist.txt
 

@@ -14,20 +14,22 @@
 # ARGS:
 #/////////////
 # This script takes the following arguments:
-#./pullNodes [db_name] [migration_table_name] [new_base_url] [old_base_url]
+#./pullNodes [db_name] [content_type] [new_base_url] [old_base_url]
 
 # [db_name] - name of the site database on the server which the nodes will be pulled from
 #		      i.e. business_aoda
-# [migration_table_name] - name of the table containing the nodes for a specific content type.
-#						   Most sites will have more than one table, since most sites have multiple
-#						   content types. Notation for table will be migrate_map_ug[contentType][6|7]
-#						   where content type is content type (page, event, etc.) and the number following
-#					       is the version of Drupal automated migration that was performed (either 6 or 7, maybe 8 in the future). 
-#						   i.e. migrate_map_ugnews7
+
+# [content_type] - name of the migration map table for for a specific content type.
+#				   Most sites will have more than one table, since most sites have multiple content types. 
+#				   Notation is content type name as found in the mysql table ( migrate_map_xxxx(6|7) where x's are the content type)
+#				   followed by the drupal version before migration (either 6 or 7, maybe 8 in the future). 
+#				   i.e. news7
+
 # [new_base_url] - The base url for the new staging site. Will most likely be in format:
 #				   https://aoda.web.uoguelph.ca/[sitename] 
 #				   where sitename is the subdomain of the newly installed and migrated Drupal site.
 #				   i.e. https://aoda.web.uoguelph.ca/business
+
 # [old_base_url] - The base url for the old production site. Will most likely be in format:
 #				   https://www.uoguelph.ca/[sitename] 
 #				   where sitename is the subdomain of the old production site.
@@ -38,7 +40,8 @@
 #/////////////
 # - the [sitename] subdomain for the old and new site urls will not always be the same. For instance, https://.../csd (prod)
 #   became https://.../sas (new dev) during the migration process
-# - Full database and table names can be viewed on the mysql database on ws-securehst13.
+# - Full database and table names can be viewed on the mysql database on ws-securehst13. Relevant tables for nodelists are 
+#	the migrate_map_[content_type][drupal_version] tables.
 RED='\033[0:31m'
 
 if [ $# -lt 4 ]; then
@@ -53,11 +56,11 @@ fi
 #3) pipes to sed to add second URL
 #4) strips first line (SQL column names)
 #5) then redirects to text file
-drush @aoda.$1.dev sql-query "SELECT destid1,sourceid1 from "$1"."$2"" \
+drush @aoda.$1.dev sql-query "SELECT destid1,sourceid1 from "$1".migrate_map_ug"$2"" \
 | sed -e 's_^[0-9]*_'$3'/node/&_' \
 | sed -e 's_[0-9]*$_ '$4'/node/&_' \
 | sed -n '2,$p' \
-> nodelists/$1-nodelist.txt
+> nodelists/$1-$2-nodelist.txt
 
 
 

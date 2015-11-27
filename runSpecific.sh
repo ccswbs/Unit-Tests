@@ -13,8 +13,10 @@
 
 # [test_folder] - Name of the folder the test is stored in (and the type of test it is). 
 #				  Can be either 'functional' or 'comparison'.
+
 # [test_name] - Name of the test script being run. Must exist in the test folder specified.
 #				i.e. breadcrumb.js
+
 # [nodelist] - Name of the nodelist either pulled by pullNodes.sh or a custom nodelist for testing purposes.
 #			   i.e. business_aoda-news-nodelist.txt
 
