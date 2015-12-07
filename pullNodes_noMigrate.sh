@@ -51,7 +51,7 @@ fi
 #4) strips first line (SQL column names)
 #5) then redirects to text file
 drush @aoda.$1.dev sql-query "SELECT alias from "$1".url_alias" \
-#| sed  "s@.@"$2"/& "$3"/&@" \
+| sed "s|.*|"$2"/& "$3"/&|" \
 | sed -n '2,$p' \
 > nodelists/$1-nodelist_noMigrate.txt
 
